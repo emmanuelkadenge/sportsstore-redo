@@ -1,0 +1,23 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+
+<body>
+   <%- include('includes/navigation.ejs') %>
+
+    <main>
+        <form class="product-form" action="/view-sport" method="POST">
+            <div class="form-control">
+                <label for="title">Sport Name</label>
+                <input type="text" name="sportName" id="sportName">
+                <label for="id">sport ID</label>
+                <input type="text" name="sportID" id="sportID">
+                <label for="sportDescription">sport Description</label>
+                <input type="text" name="sportDescription" id="sportDescription">
+            </div>
+
+            <button class="btn" type="submit">Add Sport</button>
+        </form>
+    </main>
+<%- include('includes/end.ejs') %>

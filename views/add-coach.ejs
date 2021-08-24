@@ -1,0 +1,30 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+
+<body>
+   <%- include('includes/navigation.ejs') %>
+
+    <main>
+        <form class="product-form" action="/view-coach" method="POST">
+            <div class="form-control">
+                <label for="title">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="age">Age</label>
+                <input type="text" name="age" id="age">
+                <label for="ethnicity">Ethnicity</label>
+                <input type="text" name="ethnicity" id="ethnicity">
+                <label for="height">Height</label>
+                <input type="text" name="height" id="height">
+                <label for="price">Weight</label>
+                <input type="text" name="weight" id="weight">
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description">
+            </div>
+
+            <button class="btn" type="submit">Add Coach</button>
+        </form>
+    </main>
+<%- include('includes/end.ejs') %>
+

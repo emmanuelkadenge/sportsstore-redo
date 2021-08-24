@@ -1,0 +1,11 @@
+<header class="main-header">
+    <nav class="main-header__nav">
+        <ul class="main-header__item-list">
+            <li class="main-header__item"><a class="<%= path === '/' ? 'active' : '' %>" href="/">Sports Club</a></li>
+            <li class="main-header__item"><a class="<%= path === '/add-player' || path === '/view-player' ? 'active' : '' %>" href="/add-player">Players</a></li>
+            <li class="main-header__item"><a class="<%= path === '/add-coach' || path === '/view-coach' ? 'active' : '' %>" href="/add-coach">Coaches</a></li>
+            <li class="main-header__item"><a class="<%= path === '/add-field' || path === '/view-field' ? 'active' : '' %>" href="/add-field">Fields</a></li>
+            <li class="main-header__item"><a class="<%= path === '/add-game' || path === '/view-game' ? 'active' : '' %>" href="/add-game">Games</a></li>
+        </ul>
+    </nav>
+</header>
